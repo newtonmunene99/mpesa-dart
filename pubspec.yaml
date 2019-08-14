@@ -1,6 +1,6 @@
 name: mpesa
-description: A dart wrapper around mpesa daraja api.
-version: 0.0.2
+description: This is a dart wrapper around mpesa daraja api. Written in pure dart which means it's framework agnostic(ios,android,web,plain dart,fuschia) and works out of the box. It provides a nice and well documented interface for Safaricom's daraja api.
+version: 0.0.3
 author: Newton Munene <newtonmunene99@gmail.com>
 homepage: https://github.com/newtonmunene99/mpesa-dart
 
