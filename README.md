@@ -2,6 +2,10 @@
 
 A dart wrapper around mpesa daraja api.
 
+**Work in progress**
+
+***Not tested. Will be functional at version 1.0.0***
+
 
 Ready Methods/APIs
 
