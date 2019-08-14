@@ -39,6 +39,9 @@ You Will need a few things from Safaricom before development.
 ## Getting Started
 
 
+|<img src="https://github.com/newtonmunene99/mpesa-dart/blob/master/Screenshot.png" alt="screenshot">|
+
+
 
 For help getting started with Flutter, view their 
 [online documentation](https://flutter.dev/docs), which offers tutorials, 
