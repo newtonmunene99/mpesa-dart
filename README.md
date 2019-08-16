@@ -9,7 +9,7 @@ A dart wrapper around mpesa daraja api.
 
 Ready Methods/APIs
 
-- [x] LIPA NA MPESA
+- [ ] LIPA NA MPESA
 - [ ] C2BSIMULATE
 - [ ] B2B
 - [ ] C2B
