@@ -113,7 +113,7 @@ Please file feature requests and bugs at the [issue tracker][tracker].
 ## Credits
 
 | Contributors |
----------------
+|--------------|
 | [Newton Munene](https://github.com/newtonmunene99) |
 
 For help getting started with Flutter, view their
