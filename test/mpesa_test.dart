@@ -1,23 +1,26 @@
-import 'package:flutter_test/flutter_test.dart';
-
 import 'package:mpesa/mpesa.dart';
+import 'package:test/test.dart';
 
 void main() {
-  // test('adds one to input values', () {
-  //   final calculator = Calculator();
-  //   expect(calculator.addOne(2), 3);
-  //   expect(calculator.addOne(-7), -6);
-  //   expect(calculator.addOne(0), 1);
-  //   expect(() => calculator.addOne(null), throwsNoSuchMethodError);
-  // });
+  group('A group of tests', () {
+    Mpesa mpesa;
 
-  test('I have no idea what I am doing', () {
-    final mpesa = Mpesa();
-    expect(mpesa, "to work as intended");
-  });
+    setUp(() {
+      mpesa = Mpesa(
+          clientKey: "",
+          clientSecret: "",
+          environment: "sandbox",
+          initiatorPassword: "",
+          passKey: "");
+    });
 
-  test('I am looking for contributors to write test', () {
-    // final please = PrettyPlease();
-    expect("your pull request", "to be merged 😉");
+    test('I have no idea what I am doing', () {
+      expect(mpesa, "to work as intended");
+    });
+
+    test('I am looking for contributors to write test', () {
+      // final please = PrettyPlease();
+      expect("your pull request", "to be merged 😉");
+    });
   });
 }
