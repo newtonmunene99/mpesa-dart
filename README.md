@@ -99,6 +99,9 @@ Please file feature requests and bugs at the [issue tracker][tracker].
 
 ![Recording](https://github.com/newtonmunene99/mpesa-dart/blob/master/recording.gif)
 
+## Demo App
+[Demo App](https://github.com/newtonmunene99/flutter_mpesa_demo)
+
 ## Contributing
 
 |<img src="https://github.com/newtonmunene99/mpesa-dart/blob/master/Screenshot.png" alt="screenshot">|
