@@ -9,3 +9,8 @@ build/
 
 # Directory created by dartdoc
 doc/api/
+
+# Demo directories
+demo/android
+demo/ios
+demo/build
