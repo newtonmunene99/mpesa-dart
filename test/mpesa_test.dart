@@ -2,25 +2,32 @@ import 'package:mpesa/mpesa.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('A group of tests', () {
-    Mpesa mpesa;
+  group('', () {
+    late Mpesa mpesa;
 
     setUp(() {
       mpesa = Mpesa(
-          clientKey: "",
-          clientSecret: "",
-          environment: "sandbox",
-          initiatorPassword: "",
-          passKey: "");
+        clientKey: "",
+        clientSecret: "",
+        environment: "sandbox",
+        passKey: "",
+      );
     });
 
-    test('I have no idea what I am doing', () {
-      expect(mpesa, "to work as intended");
+    test('is instance of Mpesa', () {
+      expect(mpesa, isA<Mpesa>());
     });
 
-    test('I am looking for contributors to write test', () {
-      // final please = PrettyPlease();
-      expect("your pull request", "to be merged 😉");
+    test('client key is not null', () {
+      expect(mpesa.clientKey, isNotNull);
+    });
+
+    test('client secret is not null', () {
+      expect(mpesa.clientSecret, isNotNull);
+    });
+
+    test('environment is not null', () {
+      expect(mpesa.environment, isNotNull);
     });
   });
 }

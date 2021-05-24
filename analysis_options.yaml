@@ -1,14 +1,37 @@
-# Defines a default set of lint rules enforced for
-# projects at Google. For details and rationale,
-# see https://github.com/dart-lang/pedantic#enabled-lints.
-include: package:pedantic/analysis_options.yaml
+include: package:lint/analysis_options.yaml
 
-# For lint rules and documentation, see http://dart-lang.github.io/linter/lints.
-# Uncomment to specify additional rules.
-# linter:
-#   rules:
-#     - camel_case_types
+linter:
+  rules:
+    parameter_assignments: true
+    avoid_relative_lib_imports: true
+    avoid_types_as_parameter_names: true
+    cancel_subscriptions: true
+    close_sinks: true
+    unnecessary_statements: true
+    always_put_required_named_parameters_first: true
+    always_require_non_null_named_parameters: true
+    camel_case_types: true
+    file_names: true
+    flutter_style_todos: true
+    constant_identifier_names: false
+    prefer_const_declarations: true
+    prefer_const_constructors_in_immutables: true
+    prefer_const_constructors: true
+    package_api_docs: true
+    public_member_api_docs: true
+    slash_for_doc_comments: true
 
 analyzer:
-#   exclude:
-#     - path/to/excluded/files/**
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.part.dart"
+    - "**/*.gr.dart"
+  errors:
+    missing_required_param: error
+    parameter_assignments: error
+    prefer_final_locals: error
+    argument_type_not_assignable: error
+    prefer_const_constructors: error
+    package_api_docs: warning
+    public_member_api_docs: warning
+    slash_for_doc_comments: warning

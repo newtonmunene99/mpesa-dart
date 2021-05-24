@@ -1,20 +1,16 @@
 name: mpesa
 description: This is a dart wrapper around mpesa daraja api. Written in pure dart which means it's framework agnostic(ios,android,web,plain dart,fuschia) and works out of the box.
-version: 1.0.0
-authors:
-  - Newton Munene <newtonmunene99@gmail.com>
+version: 2.0.0
 homepage: https://github.com/newtonmunene99/mpesa-dart
 repository: https://github.com/newtonmunene99/mpesa-dart
 issue_tracker: https://github.com/newtonmunene99/mpesa-dart/issues
 
 environment:
-  sdk: ">=2.4.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  #  path: ^1.6.0
-  meta: ^1.1.6
-  http: ^0.12.0+2
+  http: ^0.13.3
 
 dev_dependencies:
-  pedantic: ^1.7.0
-  test: ^1.6.0
+  lint: ^1.5.3
+  test: ^1.17.4

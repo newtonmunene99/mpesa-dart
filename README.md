@@ -49,20 +49,18 @@ class MYClass {
         clientKey: "YOUR_CONSUMER_KEY_HERE",
         clientSecret: "YOUR_CONSUMER_SECRET_HERE",
         passKey: "YOUR_LNM_PASS_KEY_HERE",
-        initiatorPassword: "YOUR_SECURITY_CREDENTIAL_HERE",
         environment: "sandbox",
     );
 
 }
 ```
 
-For the initiator_password, use the security credential from the [test credentials](https://developer.safaricom.co.ke/test_credentials). You'll also find passkey on the same page.
-
 Environment should be either `sandbox` or `production`
 
 ## Methods and Api Calls
 
-#### Lipa Na Mpesa Online (LNMO)
+### Lipa Na Mpesa Online (LNMO)
+
 Lipa na M-Pesa Online Payment API is used to initiate a M-Pesa transaction on behalf of a customer using STK Push. This is the same technique mySafaricom App uses whenever the app is used to make payments.
 
 ```dart
@@ -100,6 +98,7 @@ Please file feature requests and bugs at the [issue tracker][tracker].
 ![Recording](https://github.com/newtonmunene99/mpesa-dart/blob/master/recording.gif)
 
 ## Demo App
+
 [Demo App](https://github.com/newtonmunene99/flutter_mpesa_demo)
 
 ## Contributing
@@ -115,8 +114,8 @@ Please file feature requests and bugs at the [issue tracker][tracker].
 
 ## Credits
 
-| Contributors |
-|--------------|
+| Contributors                                       |
+| -------------------------------------------------- |
 | [Newton Munene](https://github.com/newtonmunene99) |
 
 ----------------------------
