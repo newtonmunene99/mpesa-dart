@@ -29,5 +29,23 @@ void main() {
     test('environment is not null', () {
       expect(mpesa.environment, isNotNull);
     });
+
+//was throwing this error before
+//type 'String' is not a subtype of type 'int' in type cast
+
+    test(
+        "testing MpesaResponse fromMap  constructor method response code casting",
+        () {
+      final Map<String, dynamic> demoResponse = {
+        "MerchantRequestID": "7623-624922-1",
+        "CheckoutRequestID": "ws_CO_110720211339362008",
+        "ResponseCode": "0",
+        "ResponseDescription": "Success. Request accepted for processing,",
+        "CustomerMessage": "Success. Request accepted for processin"
+      };
+      final MpesaResponse mpesaResponse = MpesaResponse.fromMap(demoResponse);
+
+      expect(mpesaResponse.ResponseCode, 0);
+    });
   });
 }
