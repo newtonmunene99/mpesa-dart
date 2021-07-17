@@ -255,7 +255,7 @@ class MpesaResponse {
     return MpesaResponse(
       MerchantRequestID: map['MerchantRequestID'] as String,
       CheckoutRequestID: map['CheckoutRequestID'] as String,
-      ResponseCode: map['ResponseCode'] as int,
+      ResponseCode: int.parse((map['ResponseCode'] as String)),
       ResponseDescription: map['ResponseDescription'] as String,
       CustomerMessage: map['CustomerMessage'] as String,
     );
