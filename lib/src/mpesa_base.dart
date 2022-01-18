@@ -70,17 +70,17 @@ class Mpesa {
 
   /// Triggers a lipa na mpesa stk push and presents user with dialog to input mpesa pin. The method will complete regardless of whether the transaction was successful or not. Results of the transaction are sent to the [callbackUrl] provided. Ensure that the [callbackUrl] provided is publicly accessible. You can use ngrok,localtunnel or serveo for local development.
   ///
-  /// `businessShortCode` can be gotten from https://developer.safaricom.co.ke/test_credentials under Lipa Na Mpesa Online Shortcode. You can ignore this if you have already set it in [globalBusinessShortCode]
+  /// `businessShortCode` can be gotten from https://developer.safaricom.co.ke/APIs/MpesaExpressSimulate under the Lipa Na Mpesa Online simulator under PartyB. You can ignore this if you have already set it in [globalBusinessShortCode]. Please note that this is for the sandbox environment. Use your registered business short code for production.
   ///
-  /// `phoneNumber` is the phone number to be charged. It must be a registered mpesa number and should contain the international dialing code i.e `254`. For example `254712345678`
+  /// `phoneNumber` is the phone number(MSISDN) to be charged. It must be a registered mpesa number(MSISDN) and should contain the international dialing code i.e `254`. For example `254712345678`
   ///
   /// `amount` is the amount to be charged. During development/sandbox all money transfered is refunded by safaricom within 24 hours. Please note that this is only applicable if you're using the [businessShortCode] provided by Safaricom and not a real one.
   ///
   /// `callbackUrl` is the url to which Mpesa responses are sent upon success or failure of a transaction. Should be able to receive post requests.
   ///
-  /// `accountReference` used with Mpesa paybills,
+  /// `accountReference` used with Mpesa paybills as account number,
   ///
-  ///  Please see https://developer.safaricom.co.ke/docs#lipa-na-m-pesa-online-payment for more info.
+  ///  Please see https://developer.safaricom.co.ke/Documentation for more info.
   Future<MpesaResponse> lipaNaMpesa({
     required String phoneNumber,
     required double amount,
@@ -192,7 +192,7 @@ class MpesaResponse {
   /// `26` - Traffic blocking condition in place
   ///
   // ignore: non_constant_identifier_names
-  int ResponseCode;
+  String ResponseCode;
 
   /// Description of the response gotten
   // ignore: non_constant_identifier_names
@@ -224,7 +224,7 @@ class MpesaResponse {
     // ignore: non_constant_identifier_names
     String? CheckoutRequestID,
     // ignore: non_constant_identifier_names
-    int? ResponseCode,
+    String? ResponseCode,
     // ignore: non_constant_identifier_names
     String? ResponseDescription,
     // ignore: non_constant_identifier_names
@@ -255,7 +255,7 @@ class MpesaResponse {
     return MpesaResponse(
       MerchantRequestID: map['MerchantRequestID'] as String,
       CheckoutRequestID: map['CheckoutRequestID'] as String,
-      ResponseCode: int.parse((map['ResponseCode'] as String)),
+      ResponseCode: map['ResponseCode'] as String,
       ResponseDescription: map['ResponseDescription'] as String,
       CustomerMessage: map['CustomerMessage'] as String,
     );
