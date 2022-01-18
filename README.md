@@ -21,13 +21,13 @@ You Will need a few things from Safaricom before development.
 2. Consumer Secret
 3. Test Credentials for Development/Sanbox environment
 
-- Login or Register as a Safaricom developer [here](https://developer.safaricom.co.ke/login-register) if you haven't.
-- Add a new App [here](https://developer.safaricom.co.ke/user/me/apps)
+- Login or Register as a Safaricom developer [here](https://developer.safaricom.co.ke/) if you haven't.
+- Add a new App [here](https://developer.safaricom.co.ke/MyApps)
 - You will be issued with a Consumer Key and Consumer Secret. You will use these to initiate an Mpesa Instance.
-- Obtain Test Credentials [here](https://developer.safaricom.co.ke/test_credentials).
+- Obtain Test Credentials [here](https://developer.safaricom.co.ke/APIs/MpesaExpressSimulate).
   - The Test Credentials Obtained Are only valid in Sandbox/Development environment. Take note of them.
   - To run in Production Environment you will need real Credentials.
-    - To go Live and be issued with real credentials,please refer to [this guide](https://developer.safaricom.co.ke/docs?javascript#going-live)
+    - To go Live and be issued with real credentials,please refer to [this guide](https://developer.safaricom.co.ke/Documentation)
 
 ## Getting Started
 
@@ -102,8 +102,6 @@ Please file feature requests and bugs at the [issue tracker][tracker].
 [Demo App](https://github.com/newtonmunene99/flutter_mpesa_demo)
 
 ## Contributing
-
-|<img src="https://github.com/newtonmunene99/mpesa-dart/blob/master/Screenshot.png" alt="screenshot">|
 
 1. Fork the project then clone the forked project
 2. Create your feature branch: `git checkout -b my-new-feature`
