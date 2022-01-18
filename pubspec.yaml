@@ -1,6 +1,6 @@
 name: mpesa
 description: This is a dart wrapper around mpesa daraja api. Written in pure dart which means it's framework agnostic(ios,android,web,plain dart,fuschia) and works out of the box.
-version: 2.0.0
+version: 2.0.1
 homepage: https://github.com/newtonmunene99/mpesa-dart
 repository: https://github.com/newtonmunene99/mpesa-dart
 issue_tracker: https://github.com/newtonmunene99/mpesa-dart/issues

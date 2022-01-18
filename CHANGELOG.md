@@ -2,6 +2,10 @@
 
 Mpesa package changelog
 
+## [2.0.1] - 18/01/2022
+
+* Fix issue [#4](https://github.com/newtonmunene99/mpesa-dart/issues/4)
+
 ## [2.0.0] - 24/05/2021
 
 * `clientKey`,`clientSecret` and `environment` are now public.
