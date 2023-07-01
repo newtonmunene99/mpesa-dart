@@ -1,11 +1,9 @@
 /// Response return by Mpesa request. Please Note that this does not indicate the success or failure of the payment. That will be sent to the callback url you provided. This response only indicates whether the payment request was accepted for processing or not.
 class MpesaResponse {
   /// The merchant request id
-  // ignore: non_constant_identifier_names
   String MerchantRequestID;
 
   /// Unique Checkout request Id. This will be sent along with the success or failure data to the callback url you provide. You can use it to identify a particular payment request.
-  // ignore: non_constant_identifier_names
   String CheckoutRequestID;
 
   /// M-Pesa Result and Response Codes

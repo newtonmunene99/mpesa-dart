@@ -113,8 +113,10 @@ Please file feature requests and bugs at the [issue tracker][tracker].
 ## Credits
 
 | Contributors                                       |
-| -------------------------------------------------- |
+| [Kevin Oduor](https://github.com/sirkev)                                            |
+|----------------------------------------------------|
 | [Newton Munene](https://github.com/newtonmunene99) |
+
 
 ----------------------------
 
