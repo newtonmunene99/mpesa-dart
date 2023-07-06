@@ -1,4 +1,5 @@
 import 'package:mpesa/mpesa.dart';
+import 'package:mpesa/src/mpesa_base/mpesa_response.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -45,7 +46,8 @@ void main() {
       };
       final MpesaResponse mpesaResponse = MpesaResponse.fromMap(demoResponse);
 
-      expect(mpesaResponse.ResponseCode, 0);
+      expect(mpesaResponse.ResponseCode, '0');
+      //the response code is of type string that's why assigning 0 causes the test to fail
     });
   });
 }

@@ -3,4 +3,4 @@
 /// More dartdocs go here.
 library mpesa;
 
-export 'src/mpesa_base.dart';
+export 'src/mpesa_base/mpesa.dart';
